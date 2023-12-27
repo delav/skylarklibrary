@@ -9,10 +9,10 @@ ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 def http_post(url, data, headers, **kwargs):
     """
     发送http post请求
-    :param url:
-    :param data:
-    :param headers:
-    :return:
+    :param url: url
+    :param data: data
+    :param headers: headers
+    :return: response
     """
     print(f"HTTP POST|{url}|{data}|{headers}")
     res = requests.post(url, '{}', headers)
