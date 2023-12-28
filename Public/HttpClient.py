@@ -1,11 +1,11 @@
-# from api.deco import keyword
+from deco import keyword
 import requests
 
 __version__ = '1.0.0'
 ROBOT_LIBRARY_SCOPE = 'GLOBAL'
 
 
-# @keyword
+@keyword
 def http_post(url, data, headers, **kwargs):
     """
     发送http post请求
@@ -19,7 +19,7 @@ def http_post(url, data, headers, **kwargs):
     return res
 
 
-# @keyword
+@keyword
 def http_get(url, headers, **kwargs):
     """
     发送http get 请求

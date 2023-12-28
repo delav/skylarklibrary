@@ -1,14 +1,15 @@
+from deco import keyword
 import requests
 
 
-
-def team11_post(url, headers, *args, **kwargs):
+@keyword
+def team2_post01(url, headers, *args, **kwargs):
     """
     发送http update 请求
     :param url:
     :param headers:
     :return:
     """
-    print(f"HTTP PATCH|{url}|{headers}")
+    print(f"HTTP Post|{url}|{headers}")
     res = requests.post(url, '{}', headers)
     return res
